@@ -25,7 +25,13 @@ define root view entity ZR_RAP_PPP_TBL002
   currency_code as CurrencyCode,
   description as Description,
   overall_status as OverallStatus,
+  @Semantics.largeObject: { mimeType: 'MimeType',   //case-sensitive
+                       fileName: 'FileName',   //case-sensitive
+                       acceptableMimeTypes: ['image/png', 'image/jpeg'],
+                       contentDispositionPreference: #ATTACHMENT }
+  
   attachment as Attachment,
+  @Semantics.mimeType: true
   mime_type as MimeType,
   file_name as FileName,
   @Semantics.user.createdBy: true
@@ -37,6 +43,13 @@ define root view entity ZR_RAP_PPP_TBL002
   @Semantics.systemDateTime.localInstanceLastChangedAt: true
   local_last_changed_at as LocalLastChangedAt,
   @Semantics.systemDateTime.lastChangedAt: true
-  last_changed_at as LastChangedAt
+  last_changed_at as LastChangedAt,
+ 
+//public associations
+_Customer,
+_Agency,
+_OverallStatus,
+_Currency
+  
   
 }
