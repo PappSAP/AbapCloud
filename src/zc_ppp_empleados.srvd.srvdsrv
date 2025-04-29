@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_PPP_EMPLEADOS'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_PPP_EMPLEADOS'
+  }
+}
+define service ZC_ppp_empleados {
+  expose zc_ppp_empleados;
+}

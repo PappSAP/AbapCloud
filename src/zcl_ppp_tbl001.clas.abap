@@ -12,7 +12,6 @@ CLASS zcl_ppp_tbl001 DEFINITION
 ENDCLASS.
 
 
-
 CLASS zcl_ppp_tbl001 IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.

@@ -1,0 +1,27 @@
+@Metadata.layer: #CORE
+annotate entity zc_ppp_empleados
+    with 
+{
+
+@UI.lineItem: [{ position: 10, emphasized: false, label: 'Código' }]
+@UI.selectionField: [{ position: 10  }]
+
+Id;
+
+@UI.lineItem: [{ position: 20 }] 
+Fname;
+
+@UI.lineItem: [{ position: 30 }] 
+
+Lname;
+
+@UI.lineItem: [{ position: 40 }] 
+@UI.selectionField: [{ position: 20  }]
+
+Sexo;
+
+@UI.lineItem: [{ position: 50 }] 
+Cargo;
+    
+    
+}
