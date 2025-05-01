@@ -3,11 +3,15 @@
 @Metadata.ignorePropagatedAnnotations: true
 @Metadata.allowExtensions: true
 define root view entity zc_ppp_empleados 
-as select from zppp_empleados
+as select from ZI_PPP_EMPLEADOS
 {
-    key id as Id,
-    fname as Fname,
-    lname as Lname,
-    sexo as Sexo,
-    cargo as Cargo
+    key Id as Id,
+    Fname as Fname,
+    Lname as Lname,
+    Sexo as Sexo,
+    Cargo as Cargo,
+    Fullname 
+
+      
+    
 }

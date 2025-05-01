@@ -1,27 +1,44 @@
 @Metadata.layer: #CORE
+@UI.headerInfo: {  typeName :      'Trabajador', 
+                   typeNamePlural: 'Empleados',
+                   title: { value: 'Id' },
+                   description   : { value : 'Fullname' }
+                    }
+
 annotate entity zc_ppp_empleados
     with 
 {
+// Facet - info General
+@UI.facet: [{  
+    position: 10, 
+    label : 'Información detallada',
+    type : #IDENTIFICATION_REFERENCE
+    }]
 
-@UI.lineItem: [{ position: 10, emphasized: false, label: 'Código' }]
-@UI.selectionField: [{ position: 10  }]
-
+@UI.lineItem: [{ position: 10,  label: 'Código' }]
+@UI.selectionField: [{ position: 10 }]
+@EndUserText:{ label: 'Código',  quickInfo: 'Ingrese código trabajador' }
+@UI.identification: [{ position: 10 }]
 Id;
 
 @UI.lineItem: [{ position: 20 }] 
+@UI.identification: [{ position: 20 }]
 Fname;
 
 @UI.lineItem: [{ position: 30 }] 
-
+@UI.identification: [{ position: 30 }]
 Lname;
 
 @UI.lineItem: [{ position: 40 }] 
 @UI.selectionField: [{ position: 20  }]
-
+@UI.identification: [{ position: 40  }]
 Sexo;
 
 @UI.lineItem: [{ position: 50 }] 
+@UI.identification: [{ position: 50 }]
 Cargo;
-    
+
+//@UI.hidden: true
+//Fullname;    
     
 }
