@@ -10,7 +10,14 @@ as select from ZI_PPP_EMPLEADOS
     Lname as Lname,
     Sexo as Sexo,
     Cargo as Cargo,
-    Fullname 
+    Fullname,
+    
+    // Contact Info
+    
+    _cont.PhoneNum,
+    _cont.AltPhoneNum,
+    _cont.EmailId,
+    _cont.AltEmailId
 
       
     

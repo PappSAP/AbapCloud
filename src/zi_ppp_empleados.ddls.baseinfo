@@ -6,7 +6,9 @@
 "ZPPPDB_EMPLEADOS"
 ],
 "ASSOCIATED":
-[],
+[
+"ZI_PPPDB_CONTACT"
+],
 "BASE":
 [],
 "ANNO_REF":

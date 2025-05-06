@@ -9,6 +9,7 @@
 }
 define view entity ZI_PPP_EMPLEADOS 
 as select from zpppdb_empleados
+association [1..1] to ZI_pppdb_contact as _cont on $projection.Id = _cont.Id
 
 {
     key id as Id,
@@ -16,5 +17,7 @@ as select from zpppdb_empleados
     lname as Lname,
     sexo as Sexo,
     cargo as Cargo,
-    concat_with_space( fname, lname, 1) as Fullname
+    concat_with_space( fname, lname, 1) as Fullname,
+    
+    _cont
 }

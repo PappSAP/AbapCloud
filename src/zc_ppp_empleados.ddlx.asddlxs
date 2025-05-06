@@ -8,12 +8,13 @@
 annotate entity zc_ppp_empleados
     with 
 {
-// Facet - info General
-@UI.facet: [{  
-    position: 10, 
-    label : 'Información detallada',
-    type : #IDENTIFICATION_REFERENCE
-    }]
+// Facet - 
+@UI.facet: [
+            {  position: 10, label : 'Información Básica',   type : #IDENTIFICATION_REFERENCE },   // Información básica
+            {  position: 20, label : 'Información Contacto', type : #FIELDGROUP_REFERENCE }  // Información contacto
+           ]
+
+
 
 @UI.lineItem: [{ position: 10,  label: 'Código' }]
 @UI.selectionField: [{ position: 10 }]
@@ -39,6 +40,23 @@ Sexo;
 Cargo;
 
 //@UI.hidden: true
-//Fullname;    
+//Fullname;   
+
+// Contact information
+@UI.fieldGroup: [{ position : 10 }]
+@EndUserText:  { label: 'Teléfono principal', quickInfo: 'Teléfono principal' } 
+PhoneNum;
+
+@UI.fieldGroup: [{ position : 20 }]
+@EndUserText:  { label: 'Teléfono alternativo ', quickInfo: 'Teléfono alternativo' } 
+AltPhoneNum;
+
+@UI.fieldGroup: [{ position : 30 }]
+@EndUserText:  { label: 'Email principal', quickInfo: 'Email principal' } 
+EmailId;
+
+@UI.fieldGroup: [{ position : 40 }]
+@EndUserText:  { label: 'Email alternativo', quickInfo: 'Email alternativo' } 
+AltEmailId; 
     
 }
