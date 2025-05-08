@@ -71,19 +71,19 @@ CLASS zcl_add_zpp_empleados IMPLEMENTATION.
 
     DELETE FROM zpppdb_project.
     INSERT zpppdb_project FROM @( VALUE #( id = 101 projid = 'PRJ_45001' project_name = 'Pryecto 45001'  project_type = 'ti'  is_current = 'X' duration = 1 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 102 projid = 'PRJ_45002' project_name = 'Pryecto 45002'  project_type = 'cmp' is_current = 'X' duration = 2 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 103 projid = 'PRJ_45003' project_name = 'Pryecto 45003'  project_type = 'inv' is_current = '' duration = 2 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 104 projid = 'PRJ_45004' project_name = 'Pryecto 45004'  project_type = 'mej' is_current = 'X' duration = 1 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 105 projid = 'PRJ_45005' project_name = 'Pryecto 45005'  project_type = 'ti'  is_current = ' ' duration = 1 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 106 projid = 'PRJ_45006' project_name = 'Pryecto 45006'  project_type = 'cmp' is_current = 'X' duration = 2 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 107 projid = 'PRJ_45007' project_name = 'Pryecto 45007'  project_type = 'inv' is_current = 'X' duration = 2 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 108 projid = 'PRJ_45008' project_name = 'Pryecto 45008'  project_type = 'mej' is_current = '' duration = 2 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 109 projid = 'PRJ_45009' project_name = 'Pryecto 45009'  project_type = 'ti'  is_current = 'X' duration = 3 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 101 projid = 'PRJ_45002' project_name = 'Pryecto 45002'  project_type = 'cmp' is_current = 'X' duration = 2 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 101 projid = 'PRJ_45003' project_name = 'Pryecto 45003'  project_type = 'inv' is_current = '' duration = 2 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 102 projid = 'PRJ_45004' project_name = 'Pryecto 45004'  project_type = 'mej' is_current = 'X' duration = 1 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 102 projid = 'PRJ_45005' project_name = 'Pryecto 45005'  project_type = 'ti'  is_current = ' ' duration = 1 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 103 projid = 'PRJ_45006' project_name = 'Pryecto 45006'  project_type = 'cmp' is_current = 'X' duration = 2 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 104 projid = 'PRJ_45007' project_name = 'Pryecto 45007'  project_type = 'inv' is_current = 'X' duration = 2 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 104 projid = 'PRJ_45008' project_name = 'Pryecto 45008'  project_type = 'mej' is_current = '' duration = 2 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 105 projid = 'PRJ_45009' project_name = 'Pryecto 45009'  project_type = 'ti'  is_current = 'X' duration = 3 ) ).
     INSERT zpppdb_project FROM @( VALUE #( id = 110 projid = 'PRJ_45010' project_name = 'Pryecto 45010'  project_type = 'cmp' is_current = 'X' duration = 3 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 111 projid = 'PRJ_45011' project_name = 'Pryecto 45011'  project_type = 'inv' is_current = '' duration = 3 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 112 projid = 'PRJ_45012' project_name = 'Pryecto 45012'  project_type = 'mej' is_current = 'X' duration = 1 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 113 projid = 'PRJ_45013' project_name = 'Pryecto 45013'  project_type = 'ti'  is_current = '' duration = 1 ) ).
-    INSERT zpppdb_project FROM @( VALUE #( id = 114 projid = 'PRJ_45014' project_name = 'Pryecto 45014'  project_type = 'cmp' is_current = 'X' duration = 1 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 110 projid = 'PRJ_45011' project_name = 'Pryecto 45011'  project_type = 'inv' is_current = '' duration = 3 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 111 projid = 'PRJ_45012' project_name = 'Pryecto 45012'  project_type = 'mej' is_current = 'X' duration = 1 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 111 projid = 'PRJ_45013' project_name = 'Pryecto 45013'  project_type = 'ti'  is_current = '' duration = 1 ) ).
+    INSERT zpppdb_project FROM @( VALUE #( id = 115 projid = 'PRJ_45014' project_name = 'Pryecto 45014'  project_type = 'cmp' is_current = 'X' duration = 1 ) ).
     INSERT zpppdb_project FROM @( VALUE #( id = 115 projid = 'PRJ_45015' project_name = 'Pryecto 45015'  project_type = 'inv' is_current = 'X' duration = 1 ) ).
 
     DELETE FROM zpppdb_skill.

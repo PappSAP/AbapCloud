@@ -10,8 +10,10 @@ annotate entity zc_ppp_empleados
 {
 // Facet - 
 @UI.facet: [
-            {  position: 10, label : 'Información Básica',   type : #IDENTIFICATION_REFERENCE },   // Información básica
-            {  position: 20, label : 'Información Contacto', type : #FIELDGROUP_REFERENCE }  // Información contacto
+            {  position: 10, label : 'Información Básica',   type : #IDENTIFICATION_REFERENCE  },                       // Información básica
+            {  position: 20, label : 'Información Contacto', type : #FIELDGROUP_REFERENCE, targetQualifier: 'CONT' },   // Información contacto
+            {  position: 30, label : 'Información Dirección', type : #FIELDGROUP_REFERENCE, targetQualifier: 'ADDR' },  // Información dirección
+            {  position: 40, label : 'Información Proyectos', type : #LINEITEM_REFERENCE, targetElement: '_proj' }     // Información proyectos
            ]
 
 
@@ -40,23 +42,39 @@ Sexo;
 Cargo;
 
 //@UI.hidden: true
-//Fullname;   
+//Fullname;    
 
 // Contact information
-@UI.fieldGroup: [{ position : 10 }]
+@UI.fieldGroup: [{ position : 10, qualifier: 'CONT' }]
 @EndUserText:  { label: 'Teléfono principal', quickInfo: 'Teléfono principal' } 
 PhoneNum;
 
-@UI.fieldGroup: [{ position : 20 }]
+@UI.fieldGroup: [{ position : 20, qualifier: 'CONT' }]
 @EndUserText:  { label: 'Teléfono alternativo ', quickInfo: 'Teléfono alternativo' } 
 AltPhoneNum;
 
-@UI.fieldGroup: [{ position : 30 }]
+@UI.fieldGroup: [{ position : 30, qualifier: 'CONT' }]
 @EndUserText:  { label: 'Email principal', quickInfo: 'Email principal' } 
 EmailId;
 
-@UI.fieldGroup: [{ position : 40 }]
+@UI.fieldGroup: [{ position : 40, qualifier: 'CONT' }]
 @EndUserText:  { label: 'Email alternativo', quickInfo: 'Email alternativo' } 
 AltEmailId; 
-    
+
+// Address Informarion
+
+@UI.fieldGroup: [{ position : 10, qualifier: 'ADDR' }]
+@EndUserText:  { label: 'Calle' }    
+Street;
+
+@UI.fieldGroup: [{ position : 20, qualifier: 'ADDR' }]
+@EndUserText:  { label: 'Cuidad' }    
+City;
+
+@UI.fieldGroup: [{ position : 30, qualifier: 'ADDR' }]
+@EndUserText:  { label: 'Pais' }    
+Country; 
+
+
+
 }

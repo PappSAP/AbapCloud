@@ -1,0 +1,24 @@
+@Metadata.layer: #CORE
+annotate entity ZC_ppp_project with
+{
+  @UI.lineItem: [{ position: 10 }]
+  Id;
+  
+  @UI.lineItem: [{ position: 20 }]
+  Projid;
+  
+  @UI.lineItem: [{ position: 30 }]
+  ProjectName;
+  
+  @UI.lineItem: [{ position: 40 }]
+  ProjectType;
+  
+  @UI.lineItem: [{ position: 50 }]
+  IsCurrent;
+  
+  @UI.lineItem: [{ position: 60 }]
+  Duration;
+  /* Associations */
+  //    _emp;
+
+}

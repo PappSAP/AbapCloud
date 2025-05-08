@@ -4,6 +4,7 @@
 @Metadata.allowExtensions: true
 define root view entity zc_ppp_empleados 
 as select from ZI_PPP_EMPLEADOS
+composition [1..*] of ZC_ppp_project as _proj
 {
     key Id as Id,
     Fname as Fname,
@@ -17,8 +18,16 @@ as select from ZI_PPP_EMPLEADOS
     _cont.PhoneNum,
     _cont.AltPhoneNum,
     _cont.EmailId,
-    _cont.AltEmailId
+    _cont.AltEmailId,
 
-      
+    // Address
+    
+    _addr.Street,
+    _addr.City,
+    _addr.Country,
+  
+    // project
+    
+   _proj
     
 }

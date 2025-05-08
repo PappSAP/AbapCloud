@@ -3,11 +3,14 @@
 {
 "FROM":
 [
+"ZI_PPPDB_ADDRESS",
 "ZI_PPPDB_CONTACT",
 "ZI_PPP_EMPLEADOS"
 ],
 "ASSOCIATED":
-[],
+[
+"ZC_PPP_PROJECT"
+],
 "BASE":
 [],
 "ANNO_REF":
