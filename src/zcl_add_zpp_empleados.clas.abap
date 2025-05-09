@@ -87,21 +87,21 @@ CLASS zcl_add_zpp_empleados IMPLEMENTATION.
     INSERT zpppdb_project FROM @( VALUE #( id = 115 projid = 'PRJ_45015' project_name = 'Pryecto 45015'  project_type = 'inv' is_current = 'X' duration = 1 ) ).
 
     DELETE FROM zpppdb_skill.
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 101 projid = 'PRJ_ 45001' skillid = 'Fiori'  skill_level = 'l1' is_primary = 'X' is_certified = 'X' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 101 projid = 'PRJ_ 45001' skillid = 'cds'    skill_level = 'l2' is_primary = 'X' is_certified = 'X' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 103 projid = 'PRJ_ 45001' skillid = 'odata'  skill_level = 'l2' is_primary = '' is_certified =  '' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 103 projid = 'PRJ_ 45004' skillid = 'rast'   skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 105 projid = 'PRJ_ 45004' skillid = 'Fiori'  skill_level = 'l2' is_primary = '' is_certified =  '' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 106 projid = 'PRJ_ 45004' skillid = 'cds'    skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 107 projid = 'PRJ_ 45005' skillid = 'odata'  skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 108 projid = 'PRJ_ 45005' skillid = 'rast'   skill_level = 'l3' is_primary = '' is_certified =  '' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 108 projid = 'PRJ_ 45005' skillid = 'abap'   skill_level = 'l3' is_primary = '' is_certified =  '' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 110 projid = 'PRJ_ 45010' skillid = 'mm'     skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 110 projid = 'PRJ_ 45010' skillid = 'Fiori'  skill_level = 'l4' is_primary = 'X' is_certified = '' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 110 projid = 'PRJ_ 45010' skillid = 'Javascript'  skill_level = 'l1' is_primary = 'X' is_certified = '' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 110 projid = 'PRJ_ 45013' skillid = 'sd'  skill_level = 'l2' is_primary = '' is_certified =  '' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 114 projid = 'PRJ_ 45014' skillid = 'mm'  skill_level = 'l3' is_primary = '' is_certified =  '' ) ).
-    INSERT zpppdb_SKILL FROM @( VALUE #( id = 115 projid = 'PRJ_ 45015' skillid = 'sd'  skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 101 projid = 'PRJ_45001' skillid = 'Fiori'  skill_level = 'l1' is_primary = 'X' is_certified = 'X' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 101 projid = 'PRJ_45001' skillid = 'cds'    skill_level = 'l2' is_primary = 'X' is_certified = 'X' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 103 projid = 'PRJ_45001' skillid = 'odata'  skill_level = 'l2' is_primary = '' is_certified =  '' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 103 projid = 'PRJ_45004' skillid = 'rast'   skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 105 projid = 'PRJ_45004' skillid = 'Fiori'  skill_level = 'l2' is_primary = '' is_certified =  '' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 106 projid = 'PRJ_45004' skillid = 'cds'    skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 107 projid = 'PRJ_45005' skillid = 'odata'  skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 108 projid = 'PRJ_45005' skillid = 'rast'   skill_level = 'l3' is_primary = '' is_certified =  '' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 108 projid = 'PRJ_45005' skillid = 'abap'   skill_level = 'l3' is_primary = '' is_certified =  '' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 110 projid = 'PRJ_45010' skillid = 'mm'     skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 110 projid = 'PRJ_45010' skillid = 'Fiori'  skill_level = 'l4' is_primary = 'X' is_certified = '' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 110 projid = 'PRJ_45010' skillid = 'Javascript'  skill_level = 'l1' is_primary = 'X' is_certified = '' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 110 projid = 'PRJ_45013' skillid = 'sd'  skill_level = 'l2' is_primary = '' is_certified =  '' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 114 projid = 'PRJ_45014' skillid = 'mm'  skill_level = 'l3' is_primary = '' is_certified =  '' ) ).
+    INSERT zpppdb_SKILL FROM @( VALUE #( id = 115 projid = 'PRJ_45015' skillid = 'sd'  skill_level = 'l3' is_primary = 'X' is_certified = 'X' ) ).
 
     COMMIT WORK.
     out->write( |Se generó registro para tablas ADDRESS, CONTACT, EMPLEADOS, PROJECT, SKILL. | ).

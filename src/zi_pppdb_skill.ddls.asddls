@@ -9,6 +9,7 @@
 }
 define view entity ZI_pppdb_skill 
 as select from zpppdb_skill
+
 {
     key id as Id,
     key projid as Projid,
@@ -16,4 +17,6 @@ as select from zpppdb_skill
     skill_level as SkillLevel,
     is_primary as IsPrimary,
     is_certified as IsCertified
+    
+
 }

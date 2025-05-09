@@ -9,4 +9,5 @@
 define service ZC_ppp_empleados {
   expose zc_ppp_empleados;
   expose ZC_ppp_project;
+  expose Zc_ppp_skill;
 }

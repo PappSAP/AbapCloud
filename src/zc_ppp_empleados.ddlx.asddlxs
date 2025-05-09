@@ -1,6 +1,6 @@
 @Metadata.layer: #CORE
 @UI.headerInfo: {  typeName :      'Trabajador', 
-                   typeNamePlural: 'Empleados',
+                   typeNamePlural: 'Empleados',                   
                    title: { value: 'Id' },
                    description   : { value : 'Fullname' }
                     }
